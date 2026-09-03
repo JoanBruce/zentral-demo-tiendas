@@ -1,0 +1,1 @@
+const r="!h-10 !min-h-10 !max-h-10 !py-0 !px-2.5 !pl-11",a="!h-10 !min-h-10",b="shrink-0",d="shrink-0 border-brand-500 text-brand-500 bg-brand-soft hover:bg-brand-500/10 hover:border-brand-500 dark:bg-brand-500/10 dark:border-brand-500 dark:text-brand-500 dark:hover:bg-brand-500/20 dark:hover:border-brand-500";export{r as T,b as a,a as b,d as c};

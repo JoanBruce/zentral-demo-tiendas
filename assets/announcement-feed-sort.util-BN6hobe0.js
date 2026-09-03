@@ -1,0 +1,1 @@
+const i={URGENT:0,IMPORTANT:1,INFO:2};function o(r){return[...r].sort((e,n)=>{if(e.pinned!==n.pinned)return e.pinned?-1:1;const t=i[e.priority]-i[n.priority];return t!==0?t:new Date(n.publishAt).getTime()-new Date(e.publishAt).getTime()})}export{o as s};

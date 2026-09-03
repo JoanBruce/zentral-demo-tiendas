@@ -1,0 +1,1 @@
+import{r as n}from"./vendor-react-Ck50F9g1.js";import{eL as o}from"./index-Bng8SVDU.js";const i=()=>{const{auth:a}=o();return n.useMemo(()=>{const e=t=>a.features.includes(t),s=e("SALES");return{canAssignProjectTeam:e("HR"),canLinkClientRecord:s,canUseContracts:s,canReconcileSalesInvoices:s,canReconcilePayroll:e("HR")}},[a.features])};export{i as u};

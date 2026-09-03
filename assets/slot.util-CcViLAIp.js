@@ -1,0 +1,1 @@
+import{S as r}from"./store-coverage.types-PHVtgjlT.js";function n(t){return`storeCoverage.slot.${t}`}function s(t){const{start:e,end:o}=r[t];return`${e.slice(0,2)}–${o.slice(0,2)}`}function u(t,e){return`${e(n(t))} ${s(t)}`}export{u as s};

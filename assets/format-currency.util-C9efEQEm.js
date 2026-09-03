@@ -1,0 +1,1 @@
+import{eH as e,eI as t}from"./index-Bng8SVDU.js";function c(r,a,o){return e(r??0,{currency:a,locale:o?.locale,fallback:e(0,{currency:a,locale:o?.locale})})}function f(r,a,o){return t(r??0,a,o)}export{f as a,c as f};

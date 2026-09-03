@@ -1,0 +1,1 @@
+const a={active:"bg-badge-success text-badge-success-fg",inactive:"bg-badge-muted text-badge-muted-fg border border-neutral-border"},t=[{value:"10",label:"10"},{value:"20",label:"20"},{value:"50",label:"50"}],b=e=>`REC-${String(e).padStart(3,"0")}`;export{a as R,t as a,b as r};

@@ -1,0 +1,1 @@
+const a=(e,t)=>new Date(e).toLocaleDateString(t,{month:"short",year:"numeric"}),n=e=>{const t=new Date(e);t.setHours(0,0,0,0);const o=new Date;return o.setHours(0,0,0,0),Math.round((t.getTime()-o.getTime())/864e5)};export{n as d,a as f};

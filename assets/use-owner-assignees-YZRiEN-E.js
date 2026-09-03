@@ -1,0 +1,1 @@
+import{r as t}from"./vendor-react-Ck50F9g1.js";import{bo as a}from"./index-Bng8SVDU.js";const m=()=>{const{data:r}=a({isActive:!0,frameSize:200});return t.useMemo(()=>(r?.data??[]).map(e=>({id:String(e.id),name:e.name,lastName:e.lastName??null,email:e.email??"",profilePhoto:e.user?.profilePhoto??null,department:e.department??null})),[r])};export{m as u};

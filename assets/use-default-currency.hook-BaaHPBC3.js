@@ -1,0 +1,1 @@
+import{r as s}from"./vendor-react-Ck50F9g1.js";import{em as t}from"./index-Bng8SVDU.js";function c(){const{data:e,isLoading:r}=t();return{code:s.useMemo(()=>e?.find(o=>o.isPreferred)?.code,[e]),isLoading:r}}export{c as u};

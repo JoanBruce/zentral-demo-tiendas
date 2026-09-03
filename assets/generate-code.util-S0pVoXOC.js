@@ -1,0 +1,1 @@
+function n(e,t="COD"){const r=e.trim().normalize("NFD").replace(/[̀-ͯ]/g,"").toUpperCase().replace(/[^A-Z0-9]/g,"").slice(0,3)||t,o=Math.random().toString(36).slice(2,6).toUpperCase();return`${r}-${o}`}export{n as g};

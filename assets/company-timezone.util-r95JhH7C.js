@@ -1,0 +1,1 @@
+const o={PE:"America/Lima",ES:"Europe/Madrid",US:"America/New_York"},a=e=>e?.timezone||o[e?.payrollCountry??""]||Intl.DateTimeFormat().resolvedOptions().timeZone||"UTC",r=e=>`${e}T23:59:59`,i=e=>({headers:{"X-Timezone":e}}),s=(e,t)=>new Intl.DateTimeFormat("en-CA",{timeZone:t,year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date(e));export{s as d,r as e,a as r,i as t};

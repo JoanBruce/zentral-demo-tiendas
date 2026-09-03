@@ -1,0 +1,1 @@
+const N={DANGER:"#ef4444",NEUTRAL:"#6b7280",WARNING_SHIFT:"#FF9F43"},A=N.NEUTRAL;export{A as D,N as S};

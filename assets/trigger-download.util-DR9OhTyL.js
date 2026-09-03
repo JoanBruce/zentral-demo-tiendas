@@ -1,0 +1,1 @@
+const n=o=>{if(!o?.url)return;const e=document.createElement("a");e.href=o.url,o.fileName&&(e.download=o.fileName),e.rel="noopener",document.body.appendChild(e),e.click(),setTimeout(()=>e.remove(),0)};export{n as t};

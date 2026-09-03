@@ -1,0 +1,1 @@
+const N=["MORNING","AFTERNOON","EVENING"],s={MORNING:{start:"10:00",end:"14:00",hours:4},AFTERNOON:{start:"14:00",end:"18:00",hours:4},EVENING:{start:"18:00",end:"22:00",hours:4}};export{N as C,s as S};

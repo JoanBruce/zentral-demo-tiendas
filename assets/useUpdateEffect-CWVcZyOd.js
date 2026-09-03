@@ -1,0 +1,1 @@
+import{e4 as n}from"./index-Bng8SVDU.js";import{r as e}from"./vendor-react-Ck50F9g1.js";function p(u,r){const t=e.useRef(!0),f=e.useRef(null);let c=n(u);e.useEffect(()=>(t.current=!0,()=>{t.current=!1}),[]),e.useEffect(()=>{let s=f.current;t.current?t.current=!1:(!s||r.some((o,a)=>!Object.is(o,s[a])))&&c(),f.current=r},r)}export{p as $};

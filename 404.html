@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es" translate="no">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/zentral-demo-tiendas/zentral-mark.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Browser translation is opted out on purpose. Chrome Translate swaps text
+         nodes underneath React, which then fails to reconcile against DOM it no
+         longer owns: the whole app died with NotFoundError 'insertBefore' (seen
+         in production on /mi-fichaje, and the React error itself came through
+         translated, which is the tell). The UI already ships ES and EN through
+         i18next, so machine translation adds nothing and only breaks rendering. -->
+    <meta name="google" content="notranslate" />
+    <title>Zentral</title>
+    <!-- Runtime config: the container generates /config.js (window.__RUNTIME_CONFIG__)
+         at startup. Blocking and before the bundle so env.constants sees it.
+         In dev (vite) the file does not exist -> silent 404 and falls back to import.meta.env. -->
+    <script src="/zentral-demo-tiendas/config.js"></script>
+    <!-- Boot scripts externalized (formerly inline) for a CSP without
+         'unsafe-inline'. Blocking and ordered: theme -> branding. -->
+    <script src="/zentral-demo-tiendas/boot-theme.js"></script>
+    <script src="/zentral-demo-tiendas/boot-branding.js"></script>
+    <style>
+      #app-splash {
+        position: fixed;
+        inset: 0;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--splash-bg, #0a0a0a);
+        transition: opacity 180ms ease;
+      }
+      #app-splash.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+      }
+      #app-splash.is-gone {
+        display: none !important;
+      }
+      #app-splash-logo {
+        width: 96px;
+        height: 96px;
+        -o-object-fit: contain;
+           object-fit: contain;
+        animation: splash-spin 1.6s linear infinite;
+      }
+      @keyframes splash-spin {
+        from { transform: rotate(0deg); }
+        to   { transform: rotate(360deg); }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        #app-splash-logo { animation-duration: 3s; }
+      }
+    </style>
+    <script type="module" crossorigin src="/zentral-demo-tiendas/assets/index-Bng8SVDU.js"></script>
+    <link rel="modulepreload" crossorigin href="/zentral-demo-tiendas/assets/vendor-react-Ck50F9g1.js">
+    <link rel="stylesheet" crossorigin href="/zentral-demo-tiendas/assets/index-DRkorcUV.css">
+  </head>
+  <body>
+    <div id="app-splash" aria-hidden="true">
+      <img id="app-splash-logo" alt="" src="/zentral-demo-tiendas/zentral-mark.svg" />
+    </div>
+    <script src="/zentral-demo-tiendas/boot-splash.js"></script>
+    <div id="root"></div>
+  </body>
+</html>

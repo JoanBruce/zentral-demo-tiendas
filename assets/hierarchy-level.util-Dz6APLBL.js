@@ -1,0 +1,1 @@
+const a=1,n="SuperAdmin",t=[10,50,90,150];function s(e){return e.level===1||e.name===n}function i(e){return e<=1?"hierarchy.levels.maximum":e<=10?"hierarchy.levels.high":e<=50?"hierarchy.levels.mid":e<=100?"hierarchy.levels.standard":"hierarchy.levels.low"}function E(e,r){return`${e} — ${r(i(e))}`}export{t as H,a as S,n as a,E as g,s as i};
